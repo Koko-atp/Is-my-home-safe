@@ -1,0 +1,8 @@
+###
+POST http://127.0.0.1:8787/users 
+Content-Type: application/json
+
+{
+    "name" : "testuser 1",
+    "email" : "test@email.com"
+}
