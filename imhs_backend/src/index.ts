@@ -29,7 +29,7 @@ app.post('/users', async (c) => {
   }
 
   await callDB(c).prepare(
-      'INSERT INTO users (name, email) VALUES (?, ?)'
+      'INSERT INTO user (name, email) VALUES (?, ?)'
   ).bind(body.name, body.email).run()
 
   return c.json({ message: 'User added successfully' }, 201) 
@@ -37,7 +37,7 @@ app.post('/users', async (c) => {
 
 
     return c.json({ error: 'Failed to add user',
-      info : err
+      info : err.massage
      }, 500)
   }
 })
