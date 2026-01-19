@@ -19,7 +19,7 @@ useEffect(() => {
         const data = await res.json() 
         settest([data])
         console.log(data)                 
-    } catch (e: any) { console.error('Error fetching backend:', e.message)}}
+    } catch (e : any) { console.error('Error fetching backend:', e.message)}}
     fetchbackend();
     
 },[] )
