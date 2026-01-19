@@ -1,8 +1,28 @@
 ###
-POST http://127.0.0.1:8787/users 
+GET http://127.0.0.1:8787/page/users
+###
+POST http://127.0.0.1:8787/page/user/create
 Content-Type: application/json
 
 {
     "name" : "testuser 1",
-    "email" : "test@email.com"
+    "email" : "test1@email.com"
+}
+###
+POST http://127.0.0.1:8787/page/Home/create/1
+Content-Type: application/json
+
+{
+    "Name" : "Home for user 1"
+}
+
+
+
+###
+POST http://127.0.0.1:8787/page/Room/create/1
+Content-Type: application/json
+
+{   
+    "Name" : "Room for first house 2" , 
+    "House" : "Home for user 1"
 }

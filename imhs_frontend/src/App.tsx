@@ -34,7 +34,6 @@ function App() {
       </p>
 
       <p>backend api {'>>>>'} {db_api} </p>
-      
       <Testbe/>
     </>
   )
