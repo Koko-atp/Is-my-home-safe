@@ -9,11 +9,12 @@ Content-Type: application/json
     "email" : "test1@email.com"
 }
 ###
-POST http://127.0.0.1:8787/page/Home/create/1
+POST http://127.0.0.1:8787/page/Home/create
 Content-Type: application/json
 
 {
-    "Name" : "Home for user 1"
+    "uid" : 1 , 
+    "Name" : "Cooler house"
 }
 
 
